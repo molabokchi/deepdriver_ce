@@ -26,7 +26,7 @@ $ sudo chmod +x /usr/local/lib/docker/cli-plugins/docker-compose
 
 3. Git clone this repository & run 
 ```bash
-$ git clone git@github.com:molabokchi/deepdriver_ce.git
+$ git clone https://github.com/molabokchi/deepdriver_ce.git
 
 $ cd deepdriver_ce
 
