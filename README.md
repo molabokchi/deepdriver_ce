@@ -63,7 +63,7 @@ efd2ed40f068   registry.bokchi.com/micro_message:0.0.1-community      "/bin/sh -
 267516e6ea54   registry.bokchi.com/micro_user:0.0.1-community         "/bin/sh -c 'java $J…"   29 seconds ago   Up 23 seconds   0.0.0.0:9021->9021/tcp, :::9021->9021/tcp           micro_user
 e8da6561c1c6   registry.bokchi.com/publisher_board:0.0.1-community    "/docker-entrypoint.…"   29 seconds ago   Up 23 seconds   80/tcp, 0.0.0.0:9111->9111/tcp, :::9111->9111/tcp   publisher_board
 fc1393c016dc   registry.bokchi.com/micro_experiment:0.0.1-community   "/bin/sh -c 'java $J…"   29 seconds ago   Up 23 seconds   0.0.0.0:9031->9031/tcp, :::9031->9031/tcp           micro_experiment
-[ec2-user@ip-10-0-0-113 deepdriver]$
+[ec2-user@ip-10-0-0-113 deepdriver_ce]$
 
 ```
 
