@@ -83,6 +83,7 @@ services:
       - ./logs:/micro/service/resormicro/_logs
     ports:
       - 9051:9051
+      - 19051:19051
 
   # Dashboard publisher
   publisher.board:
