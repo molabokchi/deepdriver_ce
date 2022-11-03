@@ -1,4 +1,4 @@
-version: '3'
+version: "3.9"
 services:
   # API micro-service
   service.apimicro:
@@ -11,12 +11,14 @@ services:
     image: registry.bokchi.com/micro_api:0.0.1-community
     environment:
       mode: "comm"
+    env_file:
+      - ./env/service.env
     deploy:
       resources:
         limits:
           memory: 1g
     volumes:
-      - ./logs:/micro/service/apimicro/_logs
+      - ./_logs:/micro/service/apimicro/_logs
     ports:
       - 9011:9011
 
@@ -27,12 +29,14 @@ services:
     image: registry.bokchi.com/micro_user:0.0.1-community
     environment:
       mode: "comm"
+    env_file:
+      - ./env/service.env
     deploy:
       resources:
         limits:
           memory: 1g
     volumes:
-      - ./logs:/micro/service/usermicro/_logs
+      - ./_logs:/micro/service/usermicro/_logs
     ports:
       - 9021:9021
 
@@ -43,12 +47,14 @@ services:
     image: registry.bokchi.com/micro_experiment:0.0.1-community
     environment:
       mode: "comm"
+    env_file:
+      - ./env/service.env
     deploy:
       resources:
         limits:
           memory: 1g
     volumes:
-      - ./logs:/micro/service/expermicro/_logs
+      - ./_logs:/micro/service/expermicro/_logs
     ports:
       - 9031:9031
 
@@ -59,12 +65,14 @@ services:
     image: registry.bokchi.com/micro_message:0.0.1-community
     environment:
       mode: "comm"
+    env_file:
+      - ./env/service.env
     deploy:
       resources:
         limits:
           memory: 1g
     volumes:
-      - ./logs:/micro/service/mesgmicro/_logs
+      - ./_logs:/micro/service/mesgmicro/_logs
     ports:
       - 9041:9041
 
@@ -75,12 +83,14 @@ services:
     image: registry.bokchi.com/micro_resource:0.0.1-community
     environment:
       mode: "comm"
+    env_file:
+      - ./env/service.env
     deploy:
       resources:
         limits:
           memory: 1g
     volumes:
-      - ./logs:/micro/service/resormicro/_logs
+      - ./_logs:/micro/service/resormicro/_logs
     ports:
       - 9051:9051
       - 19051:19051
@@ -92,6 +102,8 @@ services:
     image: registry.bokchi.com/publisher_board:0.0.1-community
     environment:
       mode: "comm"
+    env_file:
+      - ./env/publisher.env
     deploy:
       resources:
         limits:

@@ -1,0 +1,15 @@
+
+## development
+.vscode/
+.idea
+*.iws
+*.iml
+*.ipr
+
+
+## generated logs directory
+_logs
+
+## temp 
+conf
+
