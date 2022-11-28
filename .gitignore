@@ -1,15 +1,4 @@
 
-## development
-.vscode/
-.idea
-*.iws
-*.iml
-*.ipr
+# developing
 
-
-## generated logs directory
-_logs
-
-## temp 
-conf
-
+standalone
