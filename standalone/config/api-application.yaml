@@ -2,9 +2,9 @@
 # for application
 
 # rdb
-RDB_URL: jdbc:postgresql://infra.rdb:xxxx/xxxx
-RDB_USR: xxxx
-RDB_PW: xxxx
+RDB_URL: ENC(CCj4a3a+CvRhYctjCUsbgBbKaHxOa4oqpuw8mp4YpaAOh69plXKKD85dNkNSOmdNnMyHSHv2TM8=)
+RDB_USR: ENC(QP3qfRU3VIr7H5Et8C4PTSDJURPKsSvS)
+RDB_PW: ENC(ovUJvz0nbXl81u19yViHyks/oT4k0vMV73F/5PrBQKw=)
 
 #
 spring:
