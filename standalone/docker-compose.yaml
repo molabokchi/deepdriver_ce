@@ -1,0 +1,201 @@
+version: "3"
+services:
+  # infra manager
+  infra.mgr:
+    depends_on:
+      - infra.rdb
+      - infra.nosql
+      - infra.gitlab
+    container_name: infra_mgr
+    hostname: infra_mgr
+    image: registry.bokchi.com/infra_manager:0.0.1-community
+    environment:
+      mode: comm
+
+  # postgresql
+  infra.rdb:
+    container_name: infra_rdb
+    hostname: infra_rdb
+    image: registry.bokchi.com/infra_rdb:0.0.1-community
+    environment:
+      mode: comm
+    deploy:
+      resources:
+        limits:
+          memory: 1g
+    ulimits:
+      memlock: -1
+      nofile:
+        soft: 65536
+        hard: 65536
+    volumes:
+      - ./_data:/var/lib/postgresql/data
+    ports:
+      - 15432:5432
+
+  # mongo
+  infra.nosql:
+    container_name: infra_nosql
+    hostname: infra_nosql
+    image: registry.bokchi.com/infra_nosql:0.0.1-community
+    environment:
+      mode: comm
+    deploy:
+      resources:
+        limits:
+          memory: 1g
+    ulimits:
+      memlock: -1
+      nofile:
+        soft: 65536
+        hard: 65536
+    volumes:
+      - ./_data/mongo:/data/db
+    ports:
+      - 37017:27017
+
+  # gitlab
+  infra.gitlab:
+    container_name: infra_gitlab
+    hostname: infra_gitlab
+    image: registry.bokchi.com/infra_gitlab:0.0.1-community
+    environment:
+      mode: comm
+    deploy:
+      resources:
+        limits:
+          memory: 4g
+    ulimits:
+      memlock: -1
+      nofile:
+        soft: 65536
+        hard: 65536
+    volumes:
+      - ./_data/gitlab:/var/opt/gitlab
+    ports:
+      - "8883:80"
+      - "6125:22"
+
+  # API micro-service
+  service.apimicro:
+    depends_on:
+      - infra.mgr
+    container_name: micro_api
+    hostname: micro_api
+    image: registry.bokchi.com/micro_api:0.0.1-community
+    environment:
+      mode: "comm"
+    env_file:
+      - ./env/service.env
+    deploy:
+      resources:
+        limits:
+          memory: 1g
+    volumes:
+      - ./_logs:/micro/service/apimicro/_logs
+      - ./config/api-application.yaml:/micro/conf/application.yaml
+    ports:
+      - 9011:9011
+
+  # User micro-service
+  service.usermicro:
+    depends_on:
+      - infra.mgr
+    container_name: micro_user
+    hostname: micro_user
+    image: registry.bokchi.com/micro_user:0.0.1-community
+    environment:
+      mode: "comm"
+    env_file:
+      - ./env/service.env
+    deploy:
+      resources:
+        limits:
+          memory: 1g
+    volumes:
+      - ./_logs:/micro/service/usermicro/_logs
+      - ./config/user-application.yaml:/micro/conf/application.yaml
+    ports:
+      - 9021:9021
+
+  # Experiment micro-service
+  service.expermicro:
+    depends_on:
+      - infra.mgr
+    container_name: micro_experiment
+    hostname: micro_experiment
+    image: registry.bokchi.com/micro_experiment:0.0.1-community
+    environment:
+      mode: "comm"
+    env_file:
+      - ./env/service.env
+    deploy:
+      resources:
+        limits:
+          memory: 1g
+    volumes:
+      - ./_logs:/micro/service/expermicro/_logs
+      - ./config/exper-application.yaml:/micro/conf/application.yaml
+    ports:
+      - 9031:9031
+
+  # Message micro-service
+  service.mesgmicro:
+    depends_on:
+      - infra.mgr
+    container_name: micro_message
+    hostname: micro_message
+    image: registry.bokchi.com/micro_message:0.0.1-community
+    environment:
+      mode: "comm"
+    env_file:
+      - ./env/service.env
+    deploy:
+      resources:
+        limits:
+          memory: 1g
+    volumes:
+      - ./_logs:/micro/service/mesgmicro/_logs
+      - ./config/mesg-application.yaml:/micro/conf/application.yaml
+    ports:
+      - 9041:9041
+
+  # Resource micro-service
+  service.resormicro:
+    depends_on:
+      - infra.mgr
+    container_name: micro_resource
+    hostname: micro_resource
+    image: registry.bokchi.com/micro_resource:0.0.1-community
+    environment:
+      mode: "comm"
+    env_file:
+      - ./env/service.env
+    deploy:
+      resources:
+        limits:
+          memory: 1g
+    volumes:
+      - ./_logs:/micro/service/resormicro/_logs
+      - ./config/resor-application.yaml:/micro/conf/application.yaml
+    ports:
+      - 9051:9051
+      - 19051:19051
+
+  # Dashboard publisher
+  publisher.board:
+    depends_on:
+      - infra.mgr
+    container_name: publisher_board
+    hostname: publisher_board
+    image: registry.bokchi.com/publisher_board:0.0.1-community
+    environment:
+      mode: "comm"
+    env_file:
+      - ./env/publisher.env
+    deploy:
+      resources:
+        limits:
+          memory: 1g
+    ports:
+      - 9111:9111

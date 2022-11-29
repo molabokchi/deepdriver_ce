@@ -1,0 +1,15 @@
+# bokchi ----
+# for application
+
+# rdb
+RDB_URL: jdbc:postgresql://infra.rdb:xxxx/xxxx
+RDB_USR: xxxx
+RDB_PW: xxxx
+
+#
+spring:
+  datasource:
+    url: ${RDB_URL}
+    username: ${RDB_USR}
+    password: ${RDB_PW}
+
