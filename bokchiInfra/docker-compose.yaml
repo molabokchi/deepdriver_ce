@@ -96,6 +96,7 @@ services:
           memory: 1g
     volumes:
       - ./_logs:/micro/service/resormicro/_logs
+      - ./storage:/micro/storage
     ports:
       - 9051:9051
       - 19051:19051
