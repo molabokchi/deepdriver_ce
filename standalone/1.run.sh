@@ -1,6 +1,13 @@
 #!/bin/bash
 
-docker-compose up -d --build
+echo "make directories"
+mkdir ./_logs
+mkdir ./storage
 
-docker-compose ps -a
+
+echo "up container by the current user"
+
+BOKCHI_ID=$(id -u):$(id -g) docker-compose up -d
+
+BOKCHI_ID=$(id -u):$(id -g) docker-compose ps -a
 

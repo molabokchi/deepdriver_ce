@@ -6,5 +6,5 @@ docker rm $(docker ps -aq)
 
 docker rmi $(docker images -aq)
 
-rm -rf _data
+sudo rm -rf _data
 
