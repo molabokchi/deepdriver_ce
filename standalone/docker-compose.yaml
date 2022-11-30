@@ -83,7 +83,7 @@ services:
       - infra.mgr
     container_name: micro_api
     hostname: micro_api
-    image: registry.bokchi.com/micro_api:0.0.1-community
+    image: registry.bokchi.com/micro_api:0.0.2-community
     user: ${BOKCHI_ID}
     environment:
       mode: "comm"
@@ -106,7 +106,7 @@ services:
       - infra.mgr
     container_name: micro_user
     hostname: micro_user
-    image: registry.bokchi.com/micro_user:0.0.1-community
+    image: registry.bokchi.com/micro_user:0.0.2-community
     user: ${BOKCHI_ID}
     environment:
       mode: "comm"
@@ -129,7 +129,7 @@ services:
       - infra.mgr
     container_name: micro_experiment
     hostname: micro_experiment
-    image: registry.bokchi.com/micro_experiment:0.0.1-community
+    image: registry.bokchi.com/micro_experiment:0.0.2-community
     user: ${BOKCHI_ID}
     environment:
       mode: "comm"
@@ -152,7 +152,7 @@ services:
       - infra.mgr
     container_name: micro_message
     hostname: micro_message
-    image: registry.bokchi.com/micro_message:0.0.1-community
+    image: registry.bokchi.com/micro_message:0.0.2-community
     user: ${BOKCHI_ID}
     environment:
       mode: "comm"
@@ -175,7 +175,7 @@ services:
       - infra.mgr
     container_name: micro_resource
     hostname: micro_resource
-    image: registry.bokchi.com/micro_resource:0.0.1-community
+    image: registry.bokchi.com/micro_resource:0.0.2-community
     user: ${BOKCHI_ID}
     environment:
       mode: "comm"
@@ -200,7 +200,7 @@ services:
       - infra.mgr
     container_name: publisher_board
     hostname: publisher_board
-    image: registry.bokchi.com/publisher_board:0.0.1-community
+    image: registry.bokchi.com/publisher_board:0.0.2-community
       #    user: ${BOKCHI_ID}
     environment:
       mode: "comm"
