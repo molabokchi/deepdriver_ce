@@ -27,16 +27,32 @@ main() {
   #  progress_bar "$i"
   #  sleep 0.1;
   #done
-  progress_bar "1"
-  sleep 1;
-  progress_bar "2"
-  sleep 1;
-  progress_bar "25"
-  sleep 1;
-  progress_bar "50"
-  sleep 1;
-
-  progress_bar "done"
+  until docker exec -it infra_mgr bash -c "ls /home/scripts" | grep -q "bokchi_1"
+  do
+    progress_bar "5" "provisioning ready"
+    sleep 0.5s
+  done
+  until docker exec -it infra_mgr bash -c "ls /home/scripts" | grep -q "bokchi_2"
+  do
+    progress_bar "10" "checked & created @rdb"
+    sleep 0.5s
+  done
+  until docker exec -it infra_mgr bash -c "ls /home/scripts" | grep -q "bokchi_3"
+  do
+    progress_bar "20" "checked $ created @nosql"
+    sleep 0.5s
+  done
+  until docker exec -it infra_mgr bash -c "ls /home/scripts" | grep -q "bokchi_4"
+  do
+    progress_bar "30" "checked & created @gitlab"
+    sleep 0.5s
+  done
+  until docker exec -it infra_mgr bash -c "ls /home/scripts" | grep -q "bokchi_5"
+  do
+    progress_bar "40" "created service user"
+    sleep 0.5s
+  done
+  progress_bar "done" "!"
 
   docker-compose ps -a
   echo -e "\n -4. completed successfully"
@@ -52,7 +68,7 @@ progress_bar() {
   else
     spinner='/-\|'
     percent_done="${1:-0}"
-    progress_message="$percent_done / ${TOTAL_CNT}"
+    progress_message="$percent_done / ${TOTAL_CNT}: $2"
   fi
 
   percent_none="$(( 50 - $percent_done ))"
