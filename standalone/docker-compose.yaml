@@ -101,6 +101,7 @@ services:
 
   # User micro-service
   service.usermicro:
+    restart: always
     depends_on:
       - infra.mgr
     container_name: micro_user
@@ -123,6 +124,7 @@ services:
 
   # Experiment micro-service
   service.expermicro:
+    restart: always
     depends_on:
       - infra.mgr
     container_name: micro_experiment
@@ -145,6 +147,7 @@ services:
 
   # Message micro-service
   service.mesgmicro:
+    restart: always
     depends_on:
       - infra.mgr
     container_name: micro_message
@@ -167,6 +170,7 @@ services:
 
   # Resource micro-service
   service.resormicro:
+    restart: always
     depends_on:
       - infra.mgr
     container_name: micro_resource
@@ -191,6 +195,7 @@ services:
 
   # Dashboard publisher
   publisher.board:
+    restart: always
     depends_on:
       - infra.mgr
     container_name: publisher_board

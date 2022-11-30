@@ -9,5 +9,8 @@ echo "up container by the current user"
 
 BOKCHI_ID=$(id -u):$(id -g) docker-compose up -d
 
-BOKCHI_ID=$(id -u):$(id -g) docker-compose ps -a
+docker-compose ps -a
+
+
+
 
