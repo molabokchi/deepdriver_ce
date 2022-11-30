@@ -1,11 +1,11 @@
 #!/bin/bash
 
-echo -e "\nStopping service (backend)"
+echo -e "\nStarting service (backend)"
 # service.mesgmicro
-docker-compose stop \
+docker-compose start \
 	service.apimicro \
 	service.usermicro \
 	service.expermicro \
-	service.resormicro
+	service.resormicro 
 
 echo "successfully done"
