@@ -7,4 +7,6 @@ docker rm $(docker ps -aq)
 docker rmi -f $(docker images -aq)
 
 sudo rm -rf _data
+sudo rm -rf storage
+
 

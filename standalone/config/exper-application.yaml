@@ -13,7 +13,6 @@ MONGO_DATABASE: ENC(+iOd8teEH51EDIzyx9Gv3tlUDuVYoBvq)
 MONGO_USR: ENC(t59YluyrY/1z+moT8wCMN+W8ak6yIOd4)
 MONGO_PW: ENC(fdSIxKECdd3ThhuJkRrd1OOCgC44EEBa+FhHjma/IUg=)
 
-
 #
 spring:
   datasource:

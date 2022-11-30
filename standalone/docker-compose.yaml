@@ -146,27 +146,27 @@ services:
       - 9031:9031
 
   # Message micro-service
-  service.mesgmicro:
-    restart: always
-    depends_on:
-      - infra.mgr
-    container_name: micro_message
-    hostname: micro_message
-    image: registry.bokchi.com/micro_message:0.0.2-community
-    user: ${BOKCHI_ID}
-    environment:
-      mode: "comm"
-    env_file:
-      - ./env/service.env
-    deploy:
-      resources:
-        limits:
-          memory: 1g
-    volumes:
-      - ./_logs:/micro/service/mesgmicro/_logs
-      - ./config/mesg-application.yaml:/micro/conf/application.yaml
-    ports:
-      - 9041:9041
+#  service.mesgmicro:
+#    restart: always
+#    depends_on:
+#      - infra.mgr
+#    container_name: micro_message
+#    hostname: micro_message
+#    image: registry.bokchi.com/micro_message:0.0.2-community
+#    user: ${BOKCHI_ID}
+#    environment:
+#      mode: "comm"
+#    env_file:
+#      - ./env/service.env
+#    deploy:
+#      resources:
+#        limits:
+#          memory: 1g
+#    volumes:
+#      - ./_logs:/micro/service/mesgmicro/_logs
+#      - ./config/mesg-application.yaml:/micro/conf/application.yaml
+#    ports:
+#      - 9041:9041
 
   # Resource micro-service
   service.resormicro:
