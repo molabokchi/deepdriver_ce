@@ -188,7 +188,8 @@ services:
     volumes:
       - ./_logs:/micro/service/resormicro/_logs
       - ./config/resor-application.yaml:/micro/conf/application.yaml
-      - ./storage:/micro/storage
+      - ./storage/fs:/micro/storage
+      - ./storage/.ssh:/home/bokchi/.ssh
     ports:
       - 9051:9051
       - 19051:19051

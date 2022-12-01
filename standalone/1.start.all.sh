@@ -19,8 +19,10 @@ main() {
   if [[ -d "${DIR_STG}" ]]; then
     echo "${DIR_STG} already existed"
   else
-    echo "make ${DIR_STG}"
-    mkdir ${DIR_STG}
+    echo "make ${DIR_STG}/.ssh"
+    echo "make ${DIR_STG}/fs"
+    mkdir -p ${DIR_STG}/.ssh
+    mkdir -p ${DIR_STG}/fs
   fi
 
   echo -e "\n❇ 2. up containers"
