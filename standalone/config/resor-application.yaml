@@ -9,6 +9,7 @@ RDB_PW: ENC(ovUJvz0nbXl81u19yViHyks/oT4k0vMV73F/5PrBQKw=)
 GITLAB_HOST: "http://infra.gitlab:80"
 GITLAB_SSH: "git@{userName}.infra.gitlab"
 GITLAB_PRIVATE_KEY: ENC(ZJfjfq4DUN3vX4W64bd4mIA0AT0u17dpaOs2AP0Yewk5mqJPGlfRvKvcXikimb5KDyr4dddPdjA=)
+GITLAB_PORT: 22
 
 #
 spring:

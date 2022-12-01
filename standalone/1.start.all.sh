@@ -58,8 +58,13 @@ main() {
   done
   progress_bar "done" "!"
 
+  echo -e "\n docker container status"
   docker-compose ps -a
-  echo -e "\n❇ 4. completed successfully"
+  echo -e "\n❇ 4. completed successfully\n"
+  echo -e "\n This packaging is used for bokchi deepdriver."
+  echo -e "\n If there is some question or bug report,"
+  echo -e "\n feel free and contact us, support@bokchi.com"
+  echo -e "\n\n Enjoy it!\n"
   exit 0
 }
 
