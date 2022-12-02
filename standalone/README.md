@@ -104,6 +104,8 @@ successfully done
 
 ## Develop in Colab (or your pyhton environment)
 
+We use Google Colab, but it is NOT mandatory requirement. You can use deepdriver anywhare installed python.
+
 Go to colab example with the belew link
 
  Link: [Deepdriver Example in Colab](https://colab.research.google.com/github/molabokchi/bokchi_open_lab/blob/main/deepdriver_ce.ipynb)

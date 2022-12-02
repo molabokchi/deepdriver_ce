@@ -79,6 +79,7 @@ publisher_board    /docker-entrypoint.sh ngin ...   Up      80/tcp, 0.0.0.0:9111
 ```
 
 ## Develop in Colab (or your pyhton environment)
+We use Google Colab, but it is NOT mandatory requirement. You can use deepdriver anywhare installed python.
 
 Go to colab example with the belew link
 
