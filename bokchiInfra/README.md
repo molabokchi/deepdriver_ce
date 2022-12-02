@@ -7,6 +7,7 @@ This deepdriver CE use Infra bokchi infrastructure. You can use Deepdriver more 
 Clone git repository
 ```
 $ git clone https://github.com/molabokchi/deepdriver_ce.git
+
 Cloning into 'deepdriver_ce'...
 remote: Enumerating objects: 186, done.
 remote: Counting objects: 100% (186/186), done.
@@ -22,6 +23,7 @@ Resolving deltas: 100% (100/100), done.
 Move bokchiInfra directory
 ```
 $ cd deepdriver_ce/bokchiInfra/
+
 ```
 
 Start all containers
@@ -78,13 +80,22 @@ publisher_board    /docker-entrypoint.sh ngin ...   Up      80/tcp, 0.0.0.0:9111
 
 ## Develop in Colab (or your pyhton environment)
 
-Go to colab example with the belew link
+1. Go to colab example with the belew link
 
-1. [Go colab](https://colab.research.google.com/github/molabokchi/bokchi_open_lab/blob/main/deepdriver.ipynb#scrollTo=nMIZhc0aye6k)
-
-2. menu -> run time -> execute all
+ [Deepdriver Example in Colab](https://colab.research.google.com/github/molabokchi/bokchi_open_lab/blob/main/deepdriver.ipynb#scrollTo=nMIZhc0aye6k)
 
 
+2. Input your server ip address @colab (deepdriver.ipynb) 
+
+```
+deepdriver.setting(http_host="{ip}:9011" ,grpc_host="{ip}:19051")
+# eg. deepdriver.setting(http_host="localhost:9011" ,grpc_host="localhost:19051")
+
+```
+
+2. click menu > run time -> execute all
+
+**Caution**: This server is public resource for quickstart. Don't send your private information.
 
 
 ## Check your experiments
@@ -143,8 +154,8 @@ uninstalled successfully
 
 ## More
 
-Visit [bokchi web](https://bokchi.com) more information.
-Contact <support@bokchi.com>
+- Visit [bokchi web](https://bokchi.com) more information.
+- Contact <support@bokchi.com>
 
 
 
