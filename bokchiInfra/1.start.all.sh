@@ -19,9 +19,15 @@ mkdir -p ${DIR_STG}/.ssh
 mkdir -p ${DIR_STG}/fs
 fi
 
-echo "run container @docker-composer by the current user"
+echo -e "\n❇ 2. run container @docker-composer by the current user"
 BOKCHI_ID=$(id -u):$(id -g) docker-compose up -d
 
+echo -e "\n docker container status"
+docker-compose ps -a
+echo -e "\n❇ 4. completed successfully\n"
+echo -e "\n This packaging is used for bokchi deepdriver."
+echo -e "\n If there is some question or bug report,"
+echo -e "\n feel free and contact us, support@bokchi.com"
+echo -e "\n\n Enjoy it!\n"
 
-
-
+exit 0

@@ -1,11 +1,19 @@
 # Deepdriver CE (community edition)
-ML platform deepdriver @bokchi.com
+Deepdriver is one of [Bokchi machine learing service](https://bokchi.com, "bokchi web"). It is ML experiment platform for web.
+We serve easy usages development interface, visualized analysis views, unlimited GPU access & resonable cost in Deepdriver.
+We also publish Deepdriver CE(Community Edition) for community. You can use visualized charts, easy usagable tables, trackable lineage, versioning artifacts(LF) and other utiliations for free.
+We hope it will contribute to the growth of the ML community.
 
-This platform is limited for personal or academy.
+# Requriements
+docker container
+
 
 # Quick start
 
-1. Install docker-compose @Ubuntu,Debian
+1. Setup docker-compose 
+
+Install
+* @Ubuntu,Debian
 ```bash 
 $ sudo apt-get update
 $ sudo apt-get install docker-compose-plugin
@@ -19,7 +27,7 @@ $ sudo yum install docker-compose-plugin
 ```
 You can also reference at https://docs.docker.com/compose/install/.
 
-2. Apply executable permissions to the binary
+Apply executable permissions to the binary
 ```bash
 $ sudo chmod +x /usr/local/lib/docker/cli-plugins/docker-compose
 
@@ -29,7 +37,7 @@ $ sudo chmod +x /usr/local/lib/docker/cli-plugins/docker-compose
 ```bash
 $ git clone https://github.com/molabokchi/deepdriver_ce.git
 
-$ cd deepdriver_ce
+$ cd deepdriver_ce/standalone
 
 $ 1.run.sh
 [ec2-user@ip-10-0-0-113 deepdriver_ce]$ ./1.run.sh
