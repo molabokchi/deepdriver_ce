@@ -1,6 +1,6 @@
 # Deepdriver CE with Bokchi Infra
 
-This deepdriver CE use Infra bokchi infrastructure. You can use Deepdriver more lightly than standalone version. 
+This deepdriver CE (bokchi infra) use Infra bokchi infrastructure. You can use Deepdriver more lightly than standalone version. 
 
 ## Install
 

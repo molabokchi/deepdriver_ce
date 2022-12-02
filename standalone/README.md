@@ -143,6 +143,9 @@ Chick link to analysis your results after finish experiment.
 
 
 ## Check your experiments
+Input your server ip address
+ ![dashboard_ipaddress](/dash_ipaddr.png)
+
 Check your data & analyse data with charts
  ![exp_chart pic](https://github.com/molabokchi/deepdriver_ce/blob/3b6e9346f1b1bab8ddc07ebe839b8d1c6b28e306/etc/pic/exper_charts1.png)
 
@@ -163,40 +166,41 @@ Tracking data with versioning artifacts
 ## Uninstall
 run clear script
 ```
-$ ./0.clear.all.sh
+./0.clear.all.sh
 
-[CAUTION] All service will be initialized
+[CAUTION] All data(database, log, images) will be deleted.
  Are you sure? [y/N]y
 
 ❇ 1. down all container
-Stopping micro_message    ... done
+Stopping micro_api        ... done
 Stopping publisher_board  ... done
 Stopping micro_user       ... done
-Stopping micro_api        ... done
-Stopping micro_experiment ... done
 Stopping micro_resource   ... done
-Removing micro_message    ... done
+Stopping micro_experiment ... done
+Stopping infra_mgr        ... done
+Stopping infra_gitlab     ... done
+Stopping infra_nosql      ... done
+Stopping infra_rdb        ... done
+Removing micro_api        ... done
 Removing publisher_board  ... done
 Removing micro_user       ... done
-Removing micro_api        ... done
-Removing micro_experiment ... done
 Removing micro_resource   ... done
-Removing network bokchiinfra_default
+Removing micro_experiment ... done
+Removing infra_mgr        ... done
+Removing infra_gitlab     ... done
+Removing infra_nosql      ... done
+Removing infra_rdb        ... done
+Removing network standalone_default
 
 ❇ 2. delete all docker images
-Untagged: registry.bokchi.com/micro_api:0.0.2-community-snapshot
-Untagged: registry.bokchi.com/micro_api@sha256:b50716e3f654745391a0775944a9405d715e3dc6776e167a538a10d1f975eba8
-Deleted: sha256:6bc1fccba742c28dcac01d2aba0bbd52506b2be8bccb084da3ffaa61e1de91cc
-Deleted: sha256:72d88658557cee571d3fde15de659394dc36b256d69f3c113a7a7be745ed4288
-Deleted: sha256:b97f92f787012294ceeb878a51044de7b6302b65099c79010f5d0db0579070c5
-Deleted: sha256:2a51370e68394ba57b2e3fabce06d40e2290e68e1da4394b48fa0545b9fa9770
-Deleted: sha256:722bf4b087b376f266f35fd204aa45cd517d0de1e6616f95b97581ca87b2edbf
-Deleted: sha256:e6650cb42a471552da5a661ecff8497437edcba6737c747a38653a49c4fc7bfa
+Untagged: registry.bokchi.com/publisher_board:0.1.0-community
+Untagged: registry.bokchi.com/publisher_board@sha256:1ec86e3c49961326cd439bf440d5b053b207613d370f656a8b94eb4e408c7315
+Deleted: sha256:f00b6bbd9ca1c0167bf15e1b96a23c6a9800431e5699086e0eee15e0c4171d53
 
 ... (skip) ...
 
-Deleted: sha256:f0b70723d9e1e6b9fb1e9aeb587e10defd08a45342c8247ae43aceebf8084f2a
-Deleted: sha256:5bdeef4a08f393fcbfa9e33e9abd8912a34d8f83dbae73e97564ca77fb01999b
+Deleted: sha256:abebed1e4e8c594d0dfc1dee466e232942379f9521ff72bf2ecc10abf13bcf5b
+Deleted: sha256:ec4a38999118b78eab6899b913a548cb0b2c9b68fd05aff846a56b628b597f38
 
 ❇ 3. delete used directories
 
