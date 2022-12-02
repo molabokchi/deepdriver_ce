@@ -96,7 +96,8 @@ services:
           memory: 1g
     volumes:
       - ./_logs:/micro/service/resormicro/_logs
-      - ./storage:/micro/storage
+      - ./storage/fs:/micro/storage
+      - ./storage/.ssh:/home/bokchi/.ssh
     ports:
       - 9051:9051
       - 19051:19051
