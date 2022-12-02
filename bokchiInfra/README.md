@@ -94,6 +94,10 @@ deepdriver.setting(http_host="{ip}:9011" ,grpc_host="{ip}:19051")
 ```
 
 2. click menu > run time -> execute all
+ ![menu picture](/../etc/pic/colab_example1.png)
+
+3. link your experiments
+
 
 
 ## Check your experiments
