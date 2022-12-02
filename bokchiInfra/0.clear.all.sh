@@ -1,6 +1,6 @@
 #!/bin/bash
 
-echo -e "\n[CAUTION] All data(database, log, images) will be deleted."
+echo -e "\n[CAUTION] All service will be initialized"
 read -r -p " Are you sure? [y/N]" response
 response=${response,,} # tolower
 if [[ $response =~ ^(y| ) ]]; then
@@ -15,4 +15,6 @@ if [[ $response =~ ^(y| ) ]]; then
   sudo rm -rf _logs
   sudo rm -rf storage
 fi
+
+
 
