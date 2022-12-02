@@ -59,7 +59,7 @@ Creating micro_api        ... done
 
 ❇ 3. container status
       Name                    Command               State                                     Ports
--------------------------------------------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------
 micro_api          fixuid /bin/sh -c java $JA ...   Up      0.0.0.0:9011->9011/tcp,:::9011->9011/tcp
 micro_experiment   fixuid /bin/sh -c java $JA ...   Up      0.0.0.0:9031->9031/tcp,:::9031->9031/tcp
 micro_message      fixuid /bin/sh -c java $JA ...   Up      0.0.0.0:9041->9041/tcp,:::9041->9041/tcp
@@ -82,38 +82,44 @@ publisher_board    /docker-entrypoint.sh ngin ...   Up      80/tcp, 0.0.0.0:9111
 
 Go to colab example with the belew link
 
- [Deepdriver Example in Colab](https://colab.research.google.com/github/molabokchi/bokchi_open_lab/blob/main/deepdriver.ipynb#scrollTo=nMIZhc0aye6k)
+ Link: [Deepdriver Example in Colab](https://colab.research.google.com/github/molabokchi/bokchi_open_lab/blob/main/deepdriver_ce.ipynb)
 
+![colab picture](/colab_example2.png)
 
 Input your server ip address @colab (deepdriver.ipynb) 
-
+  
 ```
 deepdriver.setting(http_host="{ip}:9011" ,grpc_host="{ip}:19051")
 # eg. deepdriver.setting(http_host="localhost:9011" ,grpc_host="localhost:19051")
 
-```
 
-Click menu > run time -> execute all
- ![menu picture](https://github.com/molabokchi/deepdriver_ce/blob/5d5a316f7df0dae0d7cbd23f825b1b60359c139a/etc/pic/colab_example1.png)
+```
+![colab ip address](/colab_ip.png)
+
+
+Click menu > run time -> execute all (ctrl + f9)
+
 
 Chick link to analysis your results after finish experiment.
+![colab link](/finished_link.png)
 
 
 ## Check your experiments
-Check your experiments
-Check your data & analyse data with chart panel
- ![exp_chart pic]()
+Check your data & analyse data with charts
+ ![exp_chart pic](/exper_charts1.png)
 
-- anaylsis with table panel
- ![exp_table pic]()
+
+Anaylse run data with table panel
+ ![exp_table pic](/exper_table.png)
 
 ## Check your runs
-- analysis with chart panel
- ![run_chart pic]()
+Analyse summary data as table
+ ![run_chart pic](/run_charts1.png)
 
 
 ## Check your artifacts
-
+Tracking data with versioning artifacts
+ ![artifact pic](arti_overview.png)
 
 
 ## Uninstall
