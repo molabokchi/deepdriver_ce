@@ -1,4 +1,4 @@
-# Deepdriver CE with Infrabokchi Infra
+# Deepdriver CE with Bokchi Infra
 
 This deepdriver CE use Infra bokchi infrastructure. You can use Deepdriver more lightly than standalone version. 
 
@@ -6,7 +6,7 @@ This deepdriver CE use Infra bokchi infrastructure. You can use Deepdriver more 
 
 Clone git repository
 ```
-git clone https://github.com/molabokchi/deepdriver_ce.git
+$ git clone https://github.com/molabokchi/deepdriver_ce.git
 Cloning into 'deepdriver_ce'...
 remote: Enumerating objects: 186, done.
 remote: Counting objects: 100% (186/186), done.
@@ -76,8 +76,18 @@ publisher_board    /docker-entrypoint.sh ngin ...   Up      80/tcp, 0.0.0.0:9111
 
 ```
 
-## Develop @python
+## Develop in Colab (or your pyhton environment)
 
+Go to colab example with the belew link
+
+1. [Go colab](https://colab.research.google.com/github/molabokchi/bokchi_open_lab/blob/main/deepdriver.ipynb#scrollTo=nMIZhc0aye6k)
+
+2. menu -> run time -> execute all
+
+
+
+
+## Check your experiments
 
 
 
@@ -85,42 +95,56 @@ publisher_board    /docker-entrypoint.sh ngin ...   Up      80/tcp, 0.0.0.0:9111
 ## Uninstall
 run clear script
 ```
-./0.clear.all.sh
+$ ./0.clear.all.sh
 
 [CAUTION] All service will be initialized
  Are you sure? [y/N]y
 
-down all container
-Stopping micro_api        ... done
-Stopping micro_experiment ... done
+❇ 1. down all container
 Stopping micro_message    ... done
 Stopping publisher_board  ... done
-Stopping micro_resource   ... done
 Stopping micro_user       ... done
-Removing micro_api        ... done
-Removing micro_experiment ... done
+Stopping micro_api        ... done
+Stopping micro_experiment ... done
+Stopping micro_resource   ... done
 Removing micro_message    ... done
 Removing publisher_board  ... done
-Removing micro_resource   ... done
 Removing micro_user       ... done
+Removing micro_api        ... done
+Removing micro_experiment ... done
+Removing micro_resource   ... done
 Removing network bokchiinfra_default
 
-delete all docker images
-Untagged: registry.bokchi.com/micro_experiment:0.0.2-community-snapshot
-Untagged: registry.bokchi.com/micro_experiment@sha256:bda48e81072e25cf00612834f30ea0c79176b4ed610b13399db1d64311b3d77c
-Deleted: sha256:35add268126746b1deebdac393cd8f8b1cab3720f063fd37b288d0ac9ba5e400
-Deleted: sha256:492f79a1801093c3db251da52166245b683a2628322c3faad30f9097fd195278
-Deleted: sha256:2940ae1916e5c093bfbe529e1ab75760d541407de91569314f6143391b040926
-Deleted: sha256:b6791517b02e5d0ab2453d2b5dd19a236895bc137bb01c05c24d66b18f8459e0
+❇ 2. delete all docker images
+Untagged: registry.bokchi.com/micro_api:0.0.2-community-snapshot
+Untagged: registry.bokchi.com/micro_api@sha256:b50716e3f654745391a0775944a9405d715e3dc6776e167a538a10d1f975eba8
+Deleted: sha256:6bc1fccba742c28dcac01d2aba0bbd52506b2be8bccb084da3ffaa61e1de91cc
+Deleted: sha256:72d88658557cee571d3fde15de659394dc36b256d69f3c113a7a7be745ed4288
+Deleted: sha256:b97f92f787012294ceeb878a51044de7b6302b65099c79010f5d0db0579070c5
+Deleted: sha256:2a51370e68394ba57b2e3fabce06d40e2290e68e1da4394b48fa0545b9fa9770
+Deleted: sha256:722bf4b087b376f266f35fd204aa45cd517d0de1e6616f95b97581ca87b2edbf
+Deleted: sha256:e6650cb42a471552da5a661ecff8497437edcba6737c747a38653a49c4fc7bfa
 
 ... (skip) ...
 
-Deleted: sha256:4fd995c0883713c5ae7796e73d75c038c47b88dccd5567c389756991054e64cf
 Deleted: sha256:f0b70723d9e1e6b9fb1e9aeb587e10defd08a45342c8247ae43aceebf8084f2a
 Deleted: sha256:5bdeef4a08f393fcbfa9e33e9abd8912a34d8f83dbae73e97564ca77fb01999b
 
-delete all directories
+❇ 3. delete used directories
 
+uninstalled successfully
+
+ This packaging is used for bokchi deepdriver.
+ If there is some question or bug report,
+ feel free and contact us, support@bokchi.com
+ Thanks!
 
 ```
+
+## More
+
+Visit [bokchi web](https://bokchi.com) more information.
+Contact <support@bokchi.com>
+
+
 
