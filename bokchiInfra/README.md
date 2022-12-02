@@ -95,8 +95,6 @@ deepdriver.setting(http_host="{ip}:9011" ,grpc_host="{ip}:19051")
 
 2. click menu > run time -> execute all
 
-**Caution**: This server is public resource for quickstart. Don't send your private information.
-
 
 ## Check your experiments
 
