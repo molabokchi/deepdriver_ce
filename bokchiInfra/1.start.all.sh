@@ -22,12 +22,12 @@ fi
 echo -e "\n❇ 2. run container @docker-composer by the current user"
 BOKCHI_ID=$(id -u):$(id -g) docker-compose up -d
 
-echo -e "\n docker container status"
+echo -e "\n❇ 3. docker container status"
 docker-compose ps -a
 echo -e "\n❇ 4. completed successfully\n"
-echo -e "\n This packaging is used for bokchi deepdriver."
-echo -e "\n If there is some question or bug report,"
-echo -e "\n feel free and contact us, support@bokchi.com"
-echo -e "\n\n Enjoy it!\n"
+echo -e " This packaging is used for bokchi deepdriver."
+echo -e " If there is some question or bug report,"
+echo -e " feel free and contact us, support@bokchi.com"
+echo -e " Enjoy it!\n"
 
 exit 0

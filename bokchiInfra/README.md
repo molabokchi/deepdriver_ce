@@ -19,19 +19,20 @@ Resolving deltas: 100% (100/100), done.
 
 ## Run script
 
-1. Move bokchiInfra directory
+Move bokchiInfra directory
 ```
 $ cd deepdriver_ce/bokchiInfra/
 ```
 
-2. Start all containers
+Start all containers
 ```
 $ 1.start.all.sh
 ❇ 1. check environment
-./_logs already existed
+make ./_logs
 make ./storage/.ssh
 make ./storage/fs
-run container @docker-composer by the current user
+
+❇ 2. run container @docker-composer by the current user
 Creating network "bokchiinfra_default" with the default driver
 Pulling service.apimicro (registry.bokchi.com/micro_api:0.0.2-community-snapshot)...
 0.0.2-community-snapshot: Pulling from micro_api
@@ -54,7 +55,7 @@ Creating micro_resource   ... done
 Creating micro_experiment ... done
 Creating micro_api        ... done
 
- 3. container status
+❇ 3. container status
       Name                    Command               State                                     Ports
 -------------------------------------------------------------------------------------------------------------------------------------
 micro_api          fixuid /bin/sh -c java $JA ...   Up      0.0.0.0:9011->9011/tcp,:::9011->9011/tcp
@@ -65,11 +66,24 @@ micro_resource     fixuid /bin/sh -c java $JA ...   Up      0.0.0.0:19051->19051
 micro_user         fixuid /bin/sh -c java $JA ...   Up      0.0.0.0:9021->9021/tcp,:::9021->9021/tcp
 publisher_board    /docker-entrypoint.sh ngin ...   Up      80/tcp, 0.0.0.0:9111->9111/tcp,:::9111->9111/tcp
 
+
+❇ 4. completed successfully
+
+ This packaging is used for bokchi deepdriver.
+ If there is some question or bug report,
+ feel free and contact us, support@bokchi.com
+ Enjoy it!
+
 ```
+
+## Develop @python
+
+
+
 
 
 ## Uninstall
-run scripts
+run clear script
 ```
 ./0.clear.all.sh
 
