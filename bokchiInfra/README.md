@@ -80,12 +80,12 @@ publisher_board    /docker-entrypoint.sh ngin ...   Up      80/tcp, 0.0.0.0:9111
 
 ## Develop in Colab (or your pyhton environment)
 
-1. Go to colab example with the belew link
+Go to colab example with the belew link
 
  [Deepdriver Example in Colab](https://colab.research.google.com/github/molabokchi/bokchi_open_lab/blob/main/deepdriver.ipynb#scrollTo=nMIZhc0aye6k)
 
 
-2. Input your server ip address @colab (deepdriver.ipynb) 
+Input your server ip address @colab (deepdriver.ipynb) 
 
 ```
 deepdriver.setting(http_host="{ip}:9011" ,grpc_host="{ip}:19051")
@@ -93,15 +93,26 @@ deepdriver.setting(http_host="{ip}:9011" ,grpc_host="{ip}:19051")
 
 ```
 
-2. click menu > run time -> execute all
- ![menu picture](/../etc/pic/colab_example1.png)
+Click menu > run time -> execute all
+ ![menu picture](https://github.com/molabokchi/deepdriver_ce/blob/5d5a316f7df0dae0d7cbd23f825b1b60359c139a/etc/pic/colab_example1.png)
 
-3. link your experiments
-
+Chick link to analysis your results after finish experiment.
 
 
 ## Check your experiments
+Check your experiments
+Check your data & analyse data with chart panel
+ ![exp_chart pic]()
 
+- anaylsis with table panel
+ ![exp_table pic]()
+
+## Check your runs
+- analysis with chart panel
+ ![run_chart pic]()
+
+
+## Check your artifacts
 
 
 
