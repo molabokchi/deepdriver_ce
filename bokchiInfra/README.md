@@ -84,7 +84,7 @@ Go to colab example with the belew link
 
  Link: [Deepdriver Example in Colab](https://colab.research.google.com/github/molabokchi/bokchi_open_lab/blob/main/deepdriver_ce.ipynb)
 
-![colab picture](/colab_example2.png)
+![colab picture](https://github.com/molabokchi/deepdriver_ce/blob/3b6e9346f1b1bab8ddc07ebe839b8d1c6b28e306/etc/pic/colab_example2.png)
 
 Input your server ip address @colab (deepdriver.ipynb) 
   
@@ -94,27 +94,27 @@ deepdriver.setting(http_host="{ip}:9011" ,grpc_host="{ip}:19051")
 
 
 ```
-![colab ip address](/colab_ip.png)
+![colab ip address](https://github.com/molabokchi/deepdriver_ce/blob/3b6e9346f1b1bab8ddc07ebe839b8d1c6b28e306/etc/pic/colab_ip.png)
 
 
 Click menu > run time -> execute all (ctrl + f9)
 
 
 Chick link to analysis your results after finish experiment.
-![colab link](/finished_link.png)
+![colab link](https://github.com/molabokchi/deepdriver_ce/blob/3b6e9346f1b1bab8ddc07ebe839b8d1c6b28e306/etc/pic/finished_link.png)
 
 
 ## Check your experiments
 Check your data & analyse data with charts
- ![exp_chart pic](/exper_charts1.png)
+ ![exp_chart pic](https://github.com/molabokchi/deepdriver_ce/blob/3b6e9346f1b1bab8ddc07ebe839b8d1c6b28e306/etc/pic/exper_charts1.png)
 
 
 Anaylse run data with table panel
- ![exp_table pic](/exper_table.png)
+ ![exp_table pic](https://github.com/molabokchi/deepdriver_ce/blob/3b6e9346f1b1bab8ddc07ebe839b8d1c6b28e306/etc/pic/exper_table.png)
 
 ## Check your runs
 Analyse summary data as table
- ![run_chart pic](/run_charts1.png)
+ ![run_chart pic](https://github.com/molabokchi/deepdriver_ce/blob/3b6e9346f1b1bab8ddc07ebe839b8d1c6b28e306/etc/pic/run_charts1.png)
 
 
 ## Check your artifacts
