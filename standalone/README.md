@@ -67,7 +67,7 @@ Creating micro_api        ... done
 
 ❇ 4. docker container status
       Name                    Command                  State                                Ports
---------------------------------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------
 infra_gitlab       /assets/wrapper                  Up (healthy)   0.0.0.0:6125->22/tcp,:::6125->22/tcp, 443/tcp,
                                                                    0.0.0.0:8883->80/tcp,:::8883->80/tcp
 infra_mgr          /bin/bash /home/scripts/wa ...   Up
@@ -131,7 +131,7 @@ eg) "MzUxNDYyNjVmN2ExOTY5NDFjNjI3OGYyMWU0ZmJjMDVmM2RhOTgwOGEwNzJlNTg0YWZmZQ=="
 deepdriver.login(key="{USER_API_KEY}")
 
 ```
-![colab api key](/colab_apikey.png)
+![colab api key](https://github.com/molabokchi/deepdriver_ce/blob/21fcbd227091de6f8cc5904d95bffaea5b3c6b66/etc/pic/colab_apikey.png)
 
 
 Click menu > run time -> execute all (ctrl + f9)
@@ -144,7 +144,7 @@ Chick link to analysis your results after finish experiment.
 
 ## Check your experiments
 Input your server ip address
- ![dashboard_ipaddress](/dash_ipaddr.png)
+ ![dashboard_ipaddress](https://github.com/molabokchi/deepdriver_ce/blob/21fcbd227091de6f8cc5904d95bffaea5b3c6b66/etc/pic/dash_ipaddr.png)
 
 Check your data & analyse data with charts
  ![exp_chart pic](https://github.com/molabokchi/deepdriver_ce/blob/3b6e9346f1b1bab8ddc07ebe839b8d1c6b28e306/etc/pic/exper_charts1.png)
