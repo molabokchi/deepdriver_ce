@@ -63,8 +63,6 @@ Deepdriver는 데이터베이스와 파일 시스템을 저장공간으로 사�
 
 링크: [Deepdriver Example in Colab](https://colab.research.google.com/github/molabokchi/bokchi_open_lab/blob/main/deepdriver.ipynb)
 
-링크: <a href="https://colab.research.google.com/github/molabokchi/bokchi_open_lab/blob/main/deepdriver.ipynb" target="_blank"> Deepdriver Example in Colab </a>
-
 
 
 ### 2. Deepdriver 데시보드 
