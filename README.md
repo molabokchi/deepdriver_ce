@@ -71,6 +71,8 @@ Go to colab example with the belew link and execute all(Ctrl + F9).
 
 Check and analyze your experiment information(hyper-parameters, results) in many kind of charts. You can create line plot, bar chart, scatter plot, scala chart and parallel coordinates in your panel.
 
+If require ip address at dialog on front of dashboard, input `quick-experience.bokchi.com` as ip address. 
+
  ![exp_chart pic](https://github.com/molabokchi/deepdriver_ce/blob/3b6e9346f1b1bab8ddc07ebe839b8d1c6b28e306/etc/pic/exper_charts1.png)
 
 Also, you can analyze data in table format.

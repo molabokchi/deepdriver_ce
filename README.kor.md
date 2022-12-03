@@ -69,6 +69,8 @@ Deepdriver는 데이터베이스와 파일 시스템을 저장공간으로 사�
 
 만들어진 실험 정보(하이퍼파리미터, 정확도 결과)를 확인하고 분석할 수 있습니다. 그리고 line plot, bar chart, scatter chart, scala chart, parallel coordinates 그래프를 패널에 추가할 수 있습니다. 
 
+참고: 초기 데시보드 진입시에 ip address를 물어보면 `quick-experience.bokchi.com`으로 입력한다.
+
 ![exp_chart pic](https://github.com/molabokchi/deepdriver_ce/blob/3b6e9346f1b1bab8ddc07ebe839b8d1c6b28e306/etc/pic/exper_charts1.png)
 
 또한, 테이블의 형태로 중요 데이터의 선택과 정렬을 통하여 분석이 가능합니다.
