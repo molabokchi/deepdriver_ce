@@ -1,5 +1,5 @@
 # Deepdriver CE (Community Edition)
-Deepdriver is a service of [Bokchi machine learing services](https://bokchi.com, "bokchi web"). It is ML experiment platform for web.
+Deepdriver is a service of [Bokchi machine learing services](https://bokchi.com). It is ML experiment platform for web.
 We serve easy usages development interface, visualized analysis views, unlimited GPU access & resonable cost.
 
 We also publish Deepdriver CE(Community Edition) for community. You can use visualized charts, easy usagable tables, trackable lineage, versioning artifacts(LF) and other utiliations for free.

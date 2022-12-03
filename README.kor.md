@@ -1,5 +1,5 @@
 # Deepdriver CE (Community Edition)
-Deepdriver는 Bokchi Lab. 머신러닝 서비스 중의 하나입니다. Deepdriver는 웹서비스 실험환경 서비스입니다. Bokchi Lab.은 쉬운 개발환경, 시각화된 기능, 제한이 없는 자원사용(CPU/GPU)를 제공하고 합리적인 비용으로 서비스 합니다. 
+Deepdriver는 [Bokchi Lab. 머신러닝 서비스](https://bokchi.com) 중의 하나입니다. Deepdriver는 웹서비스 실험환경 서비스입니다. Bokchi Lab.은 쉬운 개발환경, 시각화된 기능, 제한이 없는 자원사용(CPU/GPU)를 제공하고 합리적인 비용으로 서비스 합니다. 
 
 또한 Deepdriver CE(Community edition)을 커뮤니티 활성화를 위하여 배포하고있습니다. 시각화된 차트, 사용이 편한 테이블, 사용 관게 추적, Large file 버저닝 기능으로 dataset, code, model을 추적하고 필요할 때 사용할 수 있습니다. 이 모든 것이 무료로 제공됩니다.
 
