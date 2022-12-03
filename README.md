@@ -7,6 +7,8 @@ We hope it will contribute to the growth of the ML community.
 
 
 
+
+
 ## Requriements
 
 All you need are docker container and python environment.
@@ -40,28 +42,32 @@ $ sudo chmod +x /usr/local/lib/docker/cli-plugins/docker-compose
 
 
 
+
+
 ## Mode
 
 Deepdriver use database and filesystem as the storage. it is seperated to two mode depending on how you use it. One mode uses public infrastructure and the other mode uses independent storage in your PC.
 
-- **bokchiInfra**: use Bokchi public infrastructure. go to bokchiInfra.
-- **standalone**: use your personal computer. go to standalone.
+- **Bokchi Infra mode**: use Bokchi public infrastructure. go to [bokchiInfra](./bokchiInfra).
+- **Standalone mode**: use your personal computer. go to [standalone](./standalone).
+
+
 
 
 
 ## Quick experience
 
-### In python environment
+### 1. In python environment
 
 Develop code in python environment. we use Google Colab now, but it is NOT mandatory requirement. You can use Deepdriver anywhare installed python.
 
-Go to colab example with the belew link
+Go to colab example with the belew link and execute all(Ctrl + F9).
 
  Link: [Deepdriver Example in Colab](https://colab.research.google.com/github/molabokchi/bokchi_open_lab/blob/main/deepdriver.ipynb)
 
 
 
-### In bokchi dashboard
+### 2. In bokchi dashboard
 
 Check and analyze your experiment information(hyper-parameters, results) in many kind of charts. You can create line plot, bar chart, scatter plot, scala chart and parallel coordinates in your panel.
 
@@ -76,6 +82,8 @@ Inspect one run data in more detail.
 
 Tracking data with versioning artifacts. Artifacts can be roll-back anytime, anywhere. 
  ![artifact pic](arti_overview.png)
+
+
 
 
 
