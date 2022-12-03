@@ -1,7 +1,9 @@
 # Deepdriver CE Standalone
 
-This deepdriver CE Standalone is running standalone without Bokchi infrastructure.
-If you using this experiment in personal computer or small group, this mode is the best way.
+This Deepdriver CE Standalone is running standalone without any infrastructure.
+If you run ML experiment using personal computer in small group, this mode is one onf the the best way.
+
+
 
 ## Install
 
@@ -19,16 +21,18 @@ Resolving deltas: 100% (100/100), done.
 
 ```
 
-## Run script
 
-Move bokchiInfra directory (standalone)
+
+## Run script (standalone)
+
+Move to standalone directory
 ```
 $ cd deepdriver_ce/standalone
 
 ```
 
 Start all containers
-**Caution**: It takes few minutes for installing. Esepcially in the gitlab provisioning.
+**Caution**: It takes few minutes for installing. Esepcially in the gitlab provisioning step.
 
 ```
 $ ./1.start.all.sh
@@ -90,8 +94,10 @@ publisher_board    /docker-entrypoint.sh ngin ...   Up             80/tcp, 0.0.0
 
 ```
 
-Check your API key used in python.
-run api-get script & remember this keys('apikey')
+
+
+Run apikey-script to get keys text('apikey') and remember your API key used in python.
+
 ```
 $ ./2.get.user.apikey.sh
 
@@ -102,9 +108,10 @@ successfully done
 ```
 
 
-## Develop in Colab (or your pyhton environment)
 
-We use Google Colab, but it is NOT mandatory requirement. You can use deepdriver anywhare installed python.
+## Develop code in python environment
+
+We use Google Colab now, but it is NOT mandatory requirement. You can use Deepdriver anywhare installed python.
 
 Go to colab example with the belew link
 
@@ -114,8 +121,8 @@ Go to colab example with the belew link
 
 
 
-Input your server ip address
-  
+Input your server ip address to the below code `{ip}`. You don't need to change ports.
+
 ```
 deepdriver.setting(http_host="{ip}:9011" ,grpc_host="{ip}:19051")
 # eg. deepdriver.setting(http_host="localhost:9011" ,grpc_host="localhost:19051")
@@ -125,7 +132,7 @@ deepdriver.setting(http_host="{ip}:9011" ,grpc_host="{ip}:19051")
 
 
 
-Input your api key.
+Input your api key to the below code `{USER_API_KEY}`
 eg) "MzUxNDYyNjVmN2ExOTY5NDFjNjI3OGYyMWU0ZmJjMDVmM2RhOTgwOGEwNzJlNTg0YWZmZQ=="
 
 ```
@@ -136,37 +143,43 @@ deepdriver.login(key="{USER_API_KEY}")
 ![colab api key](https://github.com/molabokchi/deepdriver_ce/blob/21fcbd227091de6f8cc5904d95bffaea5b3c6b66/etc/pic/colab_apikey.png)
 
 
-Click menu > run time -> execute all (ctrl + f9)
 
-
-Chick link to analysis your results after finish experiment.
+Click menu > run time -> execute all (Ctrl + F9)
+Chick link to analyze your results after finished experiment.
 ![colab link](https://github.com/molabokchi/deepdriver_ce/blob/3b6e9346f1b1bab8ddc07ebe839b8d1c6b28e306/etc/pic/finished_link.png)
 
 
 
-## Check your experiments
-Input your server ip address
+## View your experiments
+Input your `server ip address` to the dialog.
  ![dashboard_ipaddress](https://github.com/molabokchi/deepdriver_ce/blob/21fcbd227091de6f8cc5904d95bffaea5b3c6b66/etc/pic/dash_ipaddr.png)
 
-Check your data & analyse data with charts
+Check and analyze your experiment information(hyper-parameters, results) in many kind of charts. You can create line plot, bar chart, scatter plot, scala chart and parallel coordinates in your panel.
+
  ![exp_chart pic](https://github.com/molabokchi/deepdriver_ce/blob/3b6e9346f1b1bab8ddc07ebe839b8d1c6b28e306/etc/pic/exper_charts1.png)
 
+Also, you can analyze data in table format.
+![exp_table pic](https://github.com/molabokchi/deepdriver_ce/blob/3b6e9346f1b1bab8ddc07ebe839b8d1c6b28e306/etc/pic/exper_table.png)
 
-Anaylse run data with table panel
- ![exp_table pic](https://github.com/molabokchi/deepdriver_ce/blob/3b6e9346f1b1bab8ddc07ebe839b8d1c6b28e306/etc/pic/exper_table.png)
 
-## Check your runs
-Analyse summary data as table
- ![run_chart pic](https://github.com/molabokchi/deepdriver_ce/blob/3b6e9346f1b1bab8ddc07ebe839b8d1c6b28e306/etc/pic/run_charts1.png)
+
+## View your run details
+Inspect one run data in more detail.
+
+![run_chart pic](https://github.com/molabokchi/deepdriver_ce/blob/3b6e9346f1b1bab8ddc07ebe839b8d1c6b28e306/etc/pic/run_charts1.png)
+
 
 
 ## Check your artifacts
-Tracking data with versioning artifacts
+
+Tracking data with versioning artifacts. Artifacts can be roll-back anytime, anywhere. 
  ![artifact pic](arti_overview.png)
 
 
+
 ## Uninstall
-run clear script
+
+run clear script.
 ```
 ./0.clear.all.sh
 
@@ -215,9 +228,11 @@ uninstalled successfully
 
 ```
 
+
+
 ## More
 
-- Visit [bokchi web](https://bokchi.com) more information.
+- Visit [bokchi web](https://bokchi.com) to more information.
 - Contact <support@bokchi.com>
 
 

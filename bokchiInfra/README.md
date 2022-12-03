@@ -2,6 +2,8 @@
 
 This deepdriver CE (bokchi infra) use Infra bokchi infrastructure. You can use Deepdriver more lightly than standalone version. 
 
+
+
 ## Install
 
 Clone git repository
@@ -18,9 +20,11 @@ Resolving deltas: 100% (100/100), done.
 
 ```
 
+
+
 ## Run script
 
-Move bokchiInfra directory
+Move to bokchiInfra directory
 ```
 $ cd deepdriver_ce/bokchiInfra/
 
@@ -28,7 +32,7 @@ $ cd deepdriver_ce/bokchiInfra/
 
 Start all containers
 ```
-$ 1.start.all.sh
+$ ./1.start.all.sh
 ❇ 1. check environment
 make ./_logs
 make ./storage/.ssh
@@ -78,7 +82,10 @@ publisher_board    /docker-entrypoint.sh ngin ...   Up      80/tcp, 0.0.0.0:9111
 
 ```
 
-## Develop in Colab (or your pyhton environment)
+
+
+## Develop code in pyhton environment
+
 We use Google Colab, but it is NOT mandatory requirement. You can use deepdriver anywhare installed python.
 
 Go to colab example with the belew link
@@ -87,8 +94,10 @@ Go to colab example with the belew link
 
 ![colab picture](https://github.com/molabokchi/deepdriver_ce/blob/3b6e9346f1b1bab8ddc07ebe839b8d1c6b28e306/etc/pic/colab_example2.png)
 
+
+
 Input your server ip address @colab (deepdriver.ipynb) 
-  
+
 ```
 deepdriver.setting(http_host="{ip}:9011" ,grpc_host="{ip}:19051")
 # eg. deepdriver.setting(http_host="localhost:9011" ,grpc_host="localhost:19051")
@@ -98,32 +107,40 @@ deepdriver.setting(http_host="{ip}:9011" ,grpc_host="{ip}:19051")
 ![colab ip address](https://github.com/molabokchi/deepdriver_ce/blob/3b6e9346f1b1bab8ddc07ebe839b8d1c6b28e306/etc/pic/colab_ip.png)
 
 
-Click menu > run time -> execute all (ctrl + f9)
 
+Click menu > run time -> execute all (Ctrl + F9)
 
-Chick link to analysis your results after finish experiment.
+Chick link to analyze your results after finished experiment.
 ![colab link](https://github.com/molabokchi/deepdriver_ce/blob/3b6e9346f1b1bab8ddc07ebe839b8d1c6b28e306/etc/pic/finished_link.png)
 
 
-## Check your experiments
-Check your data & analyse data with charts
+
+## View your experiments
+
+Check and analyze your experiment information(hyper-parameters, results) in many kind of charts. You can create line plot, bar chart, scatter plot, scala chart and parallel coordinates in your panel.
  ![exp_chart pic](https://github.com/molabokchi/deepdriver_ce/blob/3b6e9346f1b1bab8ddc07ebe839b8d1c6b28e306/etc/pic/exper_charts1.png)
 
-
-Anaylse run data with table panel
+Also, you can analyze data in table format.
  ![exp_table pic](https://github.com/molabokchi/deepdriver_ce/blob/3b6e9346f1b1bab8ddc07ebe839b8d1c6b28e306/etc/pic/exper_table.png)
 
-## Check your runs
-Analyse summary data as table
+
+
+## View your run details
+
+Inspect one run data in more detail.
  ![run_chart pic](https://github.com/molabokchi/deepdriver_ce/blob/3b6e9346f1b1bab8ddc07ebe839b8d1c6b28e306/etc/pic/run_charts1.png)
 
 
+
 ## Check your artifacts
-Tracking data with versioning artifacts
+
+Tracking data with versioning artifacts. Artifacts can be roll-back anytime, anywhere. 
  ![artifact pic](arti_overview.png)
 
 
+
 ## Uninstall
+
 run clear script
 ```
 $ ./0.clear.all.sh
@@ -171,6 +188,8 @@ uninstalled successfully
  Thanks!
 
 ```
+
+
 
 ## More
 
