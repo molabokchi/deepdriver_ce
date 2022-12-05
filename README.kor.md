@@ -101,7 +101,7 @@ Deepdriver는 데이터베이스와 파일 시스템을 저장공간으로 사�
 
 
 
-##문제 해결
+## 문제 해결
 
 ### 1. Docker 미설치
 
@@ -113,7 +113,7 @@ Cannot connect to the Docker daemon at unix:///var/run/docker.sock. Is the docke
 
 
 
-## 더 많은 것들
+## 더 많은 정보
 
 - 더 많은 정보를 원하시면 [bokchi web](https://bokchi.com)를 방문하세요.
 - 문의사항은 <support@bokchi.com>로 메일을 보내주세요. 
