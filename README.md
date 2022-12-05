@@ -9,11 +9,11 @@ We hope it will contribute to the growth of the ML community.
 
 
 
-## Requriements
+## Requirements
 
-All you need are docker container and python environment. We use dock-compose for container provisioning.
+All you need are docker and python environment. We use dock-compose for container provisioning.
 
-### 1. Check if docker container is installed
+### 1. Check if docker is installed
 
 If docker is not installed in your environment, refer to docker website.
 
@@ -43,16 +43,15 @@ $ sudo yum install docker-compose-plugin
 
 ```
 
-You can also reference at https://docs.docker.com/compose/install/.
+You can also reference at [docker website for docker-compose](https://docs.docker.com/compose/install/).
 
-Apply executable permissions to the binary
-
-```bash
-$ sudo chmod +x /usr/local/lib/docker/cli-plugins/docker-compose
-
-```
-
-
+> If there is permission problem, apply executable permissions to the binary
+>
+> ```
+> $ sudo chmod +x /usr/local/lib/docker/cli-plugins/docker-compose
+> ```
+>
+> 
 
 
 

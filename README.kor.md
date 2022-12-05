@@ -9,9 +9,9 @@ Bokchi Lab.은 Deepdriver CE를 통하여 머신러닝 커뮤니티의 성장에
 
 ## 요구사항
 
-도커 컨테이너와 파이선 개발 환경만 준비되면 됩니다. 컨테이너의 프로비저잉을 위하여 Docker-compose를 사용합니다. 
+도커와 파이선 개발 환경만 준비되면 됩니다. 컨테이너의 프로비저잉을 위하여 Docker-compose를 사용합니다. 
 
-### 1. Docker container가 설치되어 있는지 확인합니다. 
+### 1. Docker가 설치되어 있는지 확인합니다. 
 
 docker가 설치되어 있지 않다면, docker websit에서 내용을 확인하고 설치합니다. 
 
@@ -30,29 +30,26 @@ Docker-compose 설치 합니다.
 Ubuntu,Debian의 경우
 
 ```bash 
-$ sudo apt-get update
 $ sudo apt-get install docker-compose-plugin
 
 ```
 
-RPM-based distros의 경우
+CentOS의 경우
 
 ```bash
-$ sudo yum update
 $ sudo yum install docker-compose-plugin
 
 ```
 
-docker-compose의 설치는 공식 사이트(https://docs.docker.com/compose/install/.)에서도 확인할 수 있습니다. 
+docker-compose의 설치는 [공식 사이트](https://docs.docker.com/compose/install/)에서도 확인할 수 있습니다. 
 
-docker-compose에 실행 권한을 부여합니다. 
-
-```bash
-$ sudo chmod +x /usr/local/lib/docker/cli-plugins/docker-compose
-
-```
-
-
+> 권한 문제로 실행에 문제가 발생하면 docker-compose에 실행 권한을 부여합니다. 
+>
+> ```
+> $ sudo chmod +x /usr/local/lib/docker/cli-plugins/docker-compose
+> ```
+>
+> 
 
 
 
