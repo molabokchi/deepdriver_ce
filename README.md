@@ -11,22 +11,34 @@ We hope it will contribute to the growth of the ML community.
 
 ## Requriements
 
-All you need are docker container and python environment.
+All you need are docker container and python environment. We use dock-compose for container provisioning.
 
-We use dock-compose for container provisioning. Install docker-compose. 
+### 1. Check if docker container is installed
+
+If docker is not installed in your environment, refer to docker website.
+
+ [docker install guide for all platform](https://docs.docker.com/engine/install/)
+
+> If you should use 'sudo' for using docker container, type the below code to insert docker group.
+>
+> ```bash
+> $ sudo usermode -aG docker $User
+> ```
+
+### 2. Check if docker-compose is installed
+
+Install docker-compose. 
 
 Case: Ubuntu,Debian
 
 ```bash 
-$ sudo apt-get update
 $ sudo apt-get install docker-compose-plugin
 
 ```
 
-Case: RPM-based distros:
+Case: CentOS
 
 ```bash
-$ sudo yum update
 $ sudo yum install docker-compose-plugin
 
 ```
@@ -88,6 +100,16 @@ Tracking data with versioning artifacts. Artifacts can be roll-back anytime, any
  ![artifact pic](arti_overview.png)
 
 
+
+## Trouble shooting
+
+### 1. Not installed docker
+
+```
+Cannot connect to the Docker daemon at unix:///var/run/docker.sock. Is the docker daemon running?
+```
+
+Solve: install docker or run docker 
 
 
 
