@@ -59,6 +59,8 @@ Deepdriver는 데이터베이스와 파일 시스템을 저장공간으로 사�
 
 파이선 환경에서 코드를 개발할 수 있습니다. 지금은 Google Colab을 사용하여 체험하게 될 것입니다. 하지만 이것은 필수 환경이 아닙니다. python이 설치되어 있는 어느 곳에서든지 사용할 수 있습니다. 
 
+파이선 모듈 사용방법은 [Gtbook reference document](https://bokchi.gitbook.io/deepdriver-ce/)에 설명되어 있습니다. 
+
 체험을 위해서 아래 링크를 클릭하고 모두 실행하세요. 
 
 링크: [Deepdriver Example in Colab](https://colab.research.google.com/github/molabokchi/bokchi_open_lab/blob/main/deepdriver.ipynb)

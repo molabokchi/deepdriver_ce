@@ -88,6 +88,8 @@ publisher_board    /docker-entrypoint.sh ngin ...   Up      80/tcp, 0.0.0.0:9111
 
 We use Google Colab, but it is NOT mandatory requirement. You can use deepdriver anywhare installed python.
 
+If you know how to use python module, visit [Gtbook reference document](https://bokchi.gitbook.io/deepdriver-ce/).
+
 Go to colab example with the belew link
 
  Link: [Deepdriver Example in Colab](https://colab.research.google.com/github/molabokchi/bokchi_open_lab/blob/main/deepdriver_ce.ipynb)

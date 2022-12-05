@@ -61,6 +61,8 @@ Deepdriver use database and filesystem as the storage. it is seperated to two mo
 
 Develop code in python environment. we use Google Colab now, but it is NOT mandatory requirement. You can use Deepdriver anywhare installed python.
 
+If you know how to use python module, visit [Gtbook reference document](https://bokchi.gitbook.io/deepdriver-ce/).
+
 Go to colab example with the belew link and execute all(Ctrl + F9).
 
  Link: [Deepdriver Example in Colab](https://colab.research.google.com/github/molabokchi/bokchi_open_lab/blob/main/deepdriver.ipynb)
