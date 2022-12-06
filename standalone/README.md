@@ -3,7 +3,10 @@
 This Deepdriver CE Standalone is running standalone without any infrastructure.
 If you run ML experiment using personal computer in small group, this mode is one onf the the best way.
 
+## Requirement
 
+docker & docker-compose
+> If it's not installed, refer to [docker website](https://docs.docker.com/engine/install/) and install it.
 
 ## Install
 

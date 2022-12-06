@@ -2,7 +2,10 @@
 
 This deepdriver CE (bokchi infra) use Infra bokchi infrastructure. You can use Deepdriver more lightly than standalone version. 
 
+## Requirement
 
+docker & docker-compose
+> If it's not installed, refer to [docker website](https://docs.docker.com/engine/install/) and install it.
 
 ## Install
 
