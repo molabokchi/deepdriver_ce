@@ -13,6 +13,14 @@ Bokchi Lab.은 Deepdriver CE를 통하여 머신러닝 커뮤니티의 성장에
 
 ### 1. Docker가 설치되어 있는지 확인합니다. 
 
+
+설치 확인
+```bash
+$ docker --version
+Docker version 20.10.13, build a224086
+
+```
+
 docker가 설치되어 있지 않다면, docker websit에서 내용을 확인하고 설치합니다. 
 
 [모든 플랫폼별 docker 설치하는 방법](https://docs.docker.com/engine/install/)
@@ -24,6 +32,16 @@ docker가 설치되어 있지 않다면, docker websit에서 내용을 확인하
 > ```
 
 ### 2. docker-compose가 설치되어 있는지 확인합니다. 
+
+설치 확인
+```bash
+$ docker-compose version
+docker-compose version 1.29.1, build c34c88b2
+docker-py version: 5.0.0
+CPython version: 3.7.10
+OpenSSL version: OpenSSL 1.1.0l  10 Sep 2019
+
+```
 
 Docker-compose 설치 합니다. 
 

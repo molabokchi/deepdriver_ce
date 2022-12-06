@@ -15,6 +15,13 @@ All you need are docker and python environment. We use dock-compose for containe
 
 ### 1. Check if docker is installed
 
+Check installed docker
+```bash
+$ docker --version
+Docker version 20.10.13, build a224086
+
+```
+
 If docker is not installed in your environment, refer to docker website.
 
  [docker install guide for all platform](https://docs.docker.com/engine/install/)
@@ -26,6 +33,16 @@ If docker is not installed in your environment, refer to docker website.
 > ```
 
 ### 2. Check if docker-compose is installed
+
+Check installed docker-compose
+```bash
+$ docker-compose version
+docker-compose version 1.29.1, build c34c88b2
+docker-py version: 5.0.0
+CPython version: 3.7.10
+OpenSSL version: OpenSSL 1.1.0l  10 Sep 2019
+
+```
 
 Install docker-compose. 
 
