@@ -20,7 +20,7 @@ docker가 설치되어 있지 않다면, docker websit에서 내용을 확인하
 > 만약에 도커를 사용할 때마다 'sudo'를 매번 사용해야 한다면, 아래의 코드로 사용자를 docker 그룹에 넣으세요. 
 >
 > ```bash
-> $ sudo usermode -aG docker $User
+> $ sudo usermode -aG docker $USER
 > ```
 
 ### 2. docker-compose가 설치되어 있는지 확인합니다. 
