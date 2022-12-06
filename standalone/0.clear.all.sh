@@ -2,7 +2,7 @@
 
 echo -e "\n[CAUTION] All data(database, log, images) will be deleted."
 read -r -p " Are you sure? [y/N]" response
-response=${response,,} # tolower
+#response=${response,,} # tolower
 if [[ $response =~ ^(y| ) ]]; then
   echo -e "\n❇ 1. down all container"
   BOKCHI_ID=$(id -u):$(id -g) docker-compose down
