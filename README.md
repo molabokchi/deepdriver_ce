@@ -22,7 +22,7 @@ If docker is not installed in your environment, refer to docker website.
 > If you should use 'sudo' for using docker container, type the below code to insert docker group.
 >
 > ```bash
-> $ sudo usermode -aG docker $User
+> $ sudo usermode -aG docker $USER
 > ```
 
 ### 2. Check if docker-compose is installed
