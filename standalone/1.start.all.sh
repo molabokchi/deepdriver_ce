@@ -73,7 +73,7 @@ progress_bar() {
   TOTAL_CNT=30
   if [ "$1" == "done" ]; then
     spinner="🙆"
-    percent_done="${TOTAL_CNT}: $2"
+    percent_done="${TOTAL_CNT}"
     progress_message="Done!"
     new_line="\n"
   else
