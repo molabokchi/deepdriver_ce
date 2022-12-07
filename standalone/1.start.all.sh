@@ -33,33 +33,35 @@ main() {
   #done
   until docker exec -it infra_mgr bash -c "ls /home/scripts" | grep -q "bokchi_1"
   do
-    progress_bar "5" "provisioning ready"
+    progress_bar "5" "set, ready"
     sleep 0.3
   done
   until docker exec -it infra_mgr bash -c "ls /home/scripts" | grep -q "bokchi_2"
   do
-    progress_bar "10" "checked & creating @rdb"
+    progress_bar "10" "checking @rdb"
     sleep 0.3
   done
   until docker exec -it infra_mgr bash -c "ls /home/scripts" | grep -q "bokchi_3"
   do
-    progress_bar "15" "checked & creating @nosql"
+    progress_bar "15" "checking @nosql"
     sleep 0.3
   done
   until docker exec -it infra_mgr bash -c "ls /home/scripts" | grep -q "bokchi_4"
   do
-    progress_bar "20" "checked & creating @gitlab"
+    progress_bar "20" "checking @gitlab"
     sleep 0.3
   done
   until docker exec -it infra_mgr bash -c "ls /home/scripts" | grep -q "bokchi_5"
   do
-    progress_bar "25" "create service user"
+    progress_bar "25" "checking user info."
     sleep 0.3
   done
   progress_bar "done" "ok"
 
   echo -e "\n❇ 4. docker container status"
+
   docker-compose ps -a
+  
   echo -e "\n❇ 5. completed successfully\n"
   echo -e " This packaging is used for bokchi deepdriver."
   echo -e " If there is some question or bug report,"
