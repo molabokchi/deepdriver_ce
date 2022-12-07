@@ -24,7 +24,7 @@ Docker version 20.10.13, build a224086
 
 If docker is not installed in your environment, refer to docker website.
 
- [docker install guide for all platform](https://docs.docker.com/engine/install/)
+ [docker install guide for all platform](https://docs.docker.com/engine/install/#server)
 
 > If you should use 'sudo' for using docker container, type the below code to insert docker group.
 >

@@ -23,7 +23,7 @@ Docker version 20.10.13, build a224086
 
 docker가 설치되어 있지 않다면, docker websit에서 내용을 확인하고 설치합니다. 
 
-[모든 플랫폼별 docker 설치하는 방법](https://docs.docker.com/engine/install/)
+[모든 플랫폼별 docker 설치하는 방법](https://docs.docker.com/engine/install/#server)
 
 > 만약에 도커를 사용할 때마다 'sudo'를 매번 사용해야 한다면, 아래의 코드로 사용자를 docker 그룹에 넣으세요. 
 >
