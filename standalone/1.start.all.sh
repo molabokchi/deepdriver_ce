@@ -27,6 +27,8 @@ main() {
   BOKCHI_ID=$(id -u):$(id -g) docker-compose up -d
 
   echo -e "\n❇ 3. provisioning"
+  echo -e " - At the first time, it takes some time. "
+  echo -e " - Especially in checking gitlab, it takes about 7 minutes."
   #for (( i = 0; i <= ${TOTAL_CNT}; i=$i + 1)); do
   #  progress_bar "$i"
   #  sleep 0.1;

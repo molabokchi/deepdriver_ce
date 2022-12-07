@@ -110,6 +110,13 @@ successfully done
 
 ```
 
+## Other scripts
+There are many scripts for help your maintance. check the below scripts
+- 0.clear.all.sh: stop all containers, clear storage and container images. return to the status not installed deepdriver.
+- 0.stop.[all|service|publisher]: stop micro-service. not delete container image and mounted storages.
+- 0.update.[all|service|publisher]: stop micro-service. delete only container image. restart as docker-compose.yaml
+- 1.start.[all|service|publisher]: start(install) all service. it make mandatory directories(_data, storages, logs...). start container as docker-compose.yaml
+- utils/update.micro_[api|user|experiment|message|resource|publisher]: stop specific micro-service. delete only container image. restart as docker-compose.yaml
 
 
 ## Develop code in python environment
