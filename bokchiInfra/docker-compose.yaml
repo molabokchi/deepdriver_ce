@@ -8,7 +8,7 @@ services:
 #      context: ./_dockerfiles
 #      dockerfile: dockerfile.micro_api
 #    image: micro_api:local
-    image: registry.bokchi.com/micro_api:0.1.0-community-snapshot
+    image: registry.bokchi.com/micro_api:0.2.0-community-snapshot
     user: ${BOKCHI_ID}
     environment:
       mode: "comm"
@@ -27,7 +27,7 @@ services:
   service.usermicro:
     container_name: micro_user
     hostname: micro_user
-    image: registry.bokchi.com/micro_user:0.1.0-community-snapshot
+    image: registry.bokchi.com/micro_user:0.2.0-community-snapshot
     user: ${BOKCHI_ID}
     environment:
       mode: "comm"
@@ -46,7 +46,7 @@ services:
   service.expermicro:
     container_name: micro_experiment
     hostname: micro_experiment
-    image: registry.bokchi.com/micro_experiment:0.1.0-community-snapshot
+    image: registry.bokchi.com/micro_experiment:0.2.0-community-snapshot
     user: ${BOKCHI_ID}
     environment:
       mode: "comm"
@@ -65,7 +65,7 @@ services:
   service.mesgmicro:
     container_name: micro_message
     hostname: micro_message
-    image: registry.bokchi.com/micro_message:0.1.0-community-snapshot
+    image: registry.bokchi.com/micro_message:0.2.0-community-snapshot
     user: ${BOKCHI_ID}
     environment:
       mode: "comm"
@@ -84,7 +84,7 @@ services:
   service.resormicro:
     container_name: micro_resource
     hostname: micro_resource
-    image: registry.bokchi.com/micro_resource:0.1.0-community-snapshot
+    image: registry.bokchi.com/micro_resource:0.2.0-community-snapshot
     user: ${BOKCHI_ID}
     environment:
       mode: "comm"
@@ -106,7 +106,7 @@ services:
   publisher.board:
     container_name: publisher_board
     hostname: publisher_board
-    image: registry.bokchi.com/publisher_board:0.1.0-community-snapshot
+    image: registry.bokchi.com/publisher_board:0.2.0-community-snapshot
 #    user: ${BOKCHI_ID}
     environment:
       mode: "comm"
