@@ -112,8 +112,10 @@ Deepdriver는 데이터베이스와 파일 시스템을 저장공간으로 사�
 ![run_chart pic](https://github.com/molabokchi/deepdriver_ce/blob/3b6e9346f1b1bab8ddc07ebe839b8d1c6b28e306/etc/pic/run_charts1.png)
 
 버저닝된 Artifact를 사용하여 추적이 가능하며, 언제 어디서든지 이전 데이터를 불러와서 사용할 수 있습니다. 
- ![artifact pic](arti_overview.png)
+ ![artifact pic1](https://github.com/molabokchi/deepdriver_ce/blob/dfec4fd702048cc2d0006b00c1f4ad5c1efa2b59/etc/pic/dash_artifact_1.png)
 
+Artifact의 파일들과 폴더를 탐색하고 확인할 수 있습니다.
+ ![artifact_pic2](https://github.com/molabokchi/deepdriver_ce/blob/dfec4fd702048cc2d0006b00c1f4ad5c1efa2b59/etc/pic/dash_artifact_2.png)
 
 
 ## 문제 해결
