@@ -185,8 +185,10 @@ Inspect one run data in more detail.
 ## Check your artifacts
 
 Tracking data with versioning artifacts. Artifacts can be roll-back anytime, anywhere. 
- ![artifact pic](arti_overview.png)
+ ![artifact pic1](https://github.com/molabokchi/deepdriver_ce/blob/dfec4fd702048cc2d0006b00c1f4ad5c1efa2b59/etc/pic/dash_artifact_1.png)
 
+Finding your files and folder in dashboard.
+ ![artifact_pic2](https://github.com/molabokchi/deepdriver_ce/blob/dfec4fd702048cc2d0006b00c1f4ad5c1efa2b59/etc/pic/dash_artifact_2.png)
 
 
 ## Uninstall
