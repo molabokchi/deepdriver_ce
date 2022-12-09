@@ -5,7 +5,7 @@ This deepdriver CE (bokchi infra) use Infra bokchi infrastructure. You can use D
 ## Requirement
 
 docker & docker-compose
-> If it's not installed, refer to [docker website](https://docs.docker.com/engine/install/) and install it.
+> If it's not installed, refer to [docker website](https://docs.docker.com/engine/install/#server) and install it.
 
 ## Install
 
