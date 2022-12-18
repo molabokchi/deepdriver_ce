@@ -128,7 +128,35 @@ Cannot connect to the Docker daemon at unix:///var/run/docker.sock. Is the docke
 
 해결방법: docker를 설치하거나 실행하세요.
 
+### 2. deepdriver가 실행되는 위치의 path가 너무 깊은경우
+아래의 멧미지로 10분 이상 큰 변화 없이 유지됨
+```
+❇ 3. provisioning
+ - At the first time, it takes some time.
+ - Especially in checking gitlab, it takes about 7 minutes.
+ Step: [▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▒▒▒▒▒▒▒▒▒▒] 🙋 20/30: checking @gitlab
 
+```
+Solve: install in not deep path.
+```
+(x) /users/bokchi/workspace/dev/document/deepdriver_ce
+(O) /users/bokchi/deepdriver_ce
+
+```
+
+### 3. 당신의 조직에서는 ssl 보안 규칙을 적용하였습니다.
+아래와 같은 메시지 출력
+```
+Cloning into 'deepdriver_ce'...
+fatal: unable to access 'https://github.com/molabokchi/deepdriver_ce.git/': server certificate verification failed. CAfile: non CRLfile: none
+
+```
+
+SSL certificate 검증을 잠시 끔
+```
+$ git -c http.sslVerify=false clone https://github.com/molabokchi/deepdriver_ce.git
+
+```
 
 ## 더 많은 정보
 

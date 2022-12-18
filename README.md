@@ -130,7 +130,7 @@ Cannot connect to the Docker daemon at unix:///var/run/docker.sock. Is the docke
 Solve: install docker or run docker 
 
 ### 2. Your installed path is so deep from root path.
-The error status is below. There is not ending after 10 minutes.
+The error status is below. It doesn't stop even after 10 minutes.
 ```
 ❇ 3. provisioning
  - At the first time, it takes some time.
@@ -139,10 +139,14 @@ The error status is below. There is not ending after 10 minutes.
 
 ```
 Solve: install in not deep path.
+```
 (x) /users/bokchi/workspace/dev/document/deepdriver_ce
 (O) /users/bokchi/deepdriver_ce
 
+```
+
 ### 3. Your organization has ssl-security rules.
+The wrong message is below.
 ```
 Cloning into 'deepdriver_ce'...
 fatal: unable to access 'https://github.com/molabokchi/deepdriver_ce.git/': server certificate verification failed. CAfile: non CRLfile: none
