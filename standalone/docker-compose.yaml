@@ -201,7 +201,7 @@ services:
       - infra.mgr
     container_name: publisher_board
     hostname: publisher_board
-    image: registry.bokchi.com/publisher_board:1.1.1-community-snapshot
+    image: registry.bokchi.com/publisher_board:1.1.2-community-snapshot
       #    user: ${BOKCHI_ID}
     environment:
       mode: "comm"
