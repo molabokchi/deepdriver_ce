@@ -11,6 +11,14 @@ GITLAB_SSH: "git@{userName}.infra.gitlab"
 GITLAB_PRIVATE_KEY: ENC(ZJfjfq4DUN3vX4W64bd4mIA0AT0u17dpaOs2AP0Yewk5mqJPGlfRvKvcXikimb5KDyr4dddPdjA=)
 GITLAB_PORT: 22
 
+# nosql
+MONGO_HOST: infra.nosql
+MONGO_PORT: ENC(3aiJB3GIQOGzJx6yz3ziug==)
+MONGO_DATABASE: ENC(+iOd8teEH51EDIzyx9Gv3tlUDuVYoBvq)
+MONGO_USR: ENC(t59YluyrY/1z+moT8wCMN+W8ak6yIOd4)
+MONGO_PW: ENC(fdSIxKECdd3ThhuJkRrd1OOCgC44EEBa+FhHjma/IUg=)
+
+
 #
 spring:
   datasource:
