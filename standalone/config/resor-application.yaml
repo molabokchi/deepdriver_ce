@@ -25,3 +25,12 @@ spring:
     url: ${RDB_URL}
     username: ${RDB_USR}
     password: ${RDB_PW}
+    # mongodb
+  data:
+    mongodb:
+      host: ${MONGO_HOST}
+      port: ${MONGO_PORT}
+      database: ${MONGO_DATABASE}
+      username: ${MONGO_USR}
+      password: ${MONGO_PW}
+      authentication-database: ${MONGO_DATABASE}
